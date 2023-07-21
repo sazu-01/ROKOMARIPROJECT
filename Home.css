@@ -1,0 +1,179 @@
+
+.navbar-brand{
+  margin-left: 20px;
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+.nav-link{
+  font-size: 1.1rem;
+}
+
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 10px 30px 10px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .product .image {
+    margin-bottom: 10px;
+  }
+  
+  .product .image img {
+    width: 160px;
+    height: 220px;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+  }
+  
+  .product .price {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .product button {
+    background-color: #081621;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product button:hover {
+    background-color: black;
+  }
+
+
+
+
+  /*footer*/
+  
+#footer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background: #081621;
+    color: #FFFFFF;
+}
+
+
+#footer .support {
+    flex: 23%;
+
+}
+
+.support h4{
+    margin: 0px 0px 15px 20px;
+}
+
+.support a {
+    display: flex;
+    flex-direction: row;
+    color: red;
+    border: 1px solid rgba(255, 255, 255, .1);
+    outline: none;
+    padding: 20px 0px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.support a:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+.support a .icon {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    padding: 0px 20px;
+}
+
+.support a .hot-line {
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+#footer .About-us {
+    flex: 56%;
+    padding: 0px 30px;
+}
+
+.About-us div{
+    float: left;
+    margin: 0px 0px;   
+    padding: 0px 30px 5px 10px; 
+}
+
+.About-us div a{
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+
+
+#footer .Stay-connected {
+    flex: 23%;
+}
+
+.Stay-connected p{
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width:1080px){
+
+    #footer {
+        display: block;
+        padding: 10px;
+
+    }
+    .support{
+        flex: 100%;
+    } 
+    .About-us{
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .About-us div{
+        float: none;
+        padding: none;
+    }
+
+    .Stay-connected{
+        flex: 100%;
+    }  
+}
+  
